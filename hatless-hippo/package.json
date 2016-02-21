@@ -1,0 +1,22 @@
+{
+  "name": "hatless-hippo",
+  "version": "1.0.0",
+  "description": "Backend service",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Radek44/mischievous-monkeys.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Radek44/mischievous-monkeys/issues"
+  },
+  "homepage": "https://github.com/Radek44/mischievous-monkeys#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
