@@ -1,6 +1,7 @@
 'use strict';
 const request = require('request');
 const express = require('express');
+let os = require('os');
 
 let app = express();
 let port = process.env.PORT || 5000;
@@ -16,7 +17,7 @@ app.get('/', function (req, res) {
     let json = JSON.parse(body);
     res.send(
         {
-            frontend:{host: req.hostname, time: new Date()},
+            frontend:{host: os.hostname(), time: new Date()},
             backend: {host: json.host, time: json.time}
         });    
   });
