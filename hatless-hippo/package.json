@@ -1,8 +1,12 @@
 {
     "name": "hatless-hippo",
     "version": "1.0.0",
-    "description": "Backend service",
+    "description": "Frontend service",
     "main": "server.js",
+    "type": "module",
+    "engines": {
+        "node": ">=22.0.0"
+    },
     "scripts": {
         "start": "node server.js",
         "test": "mocha test/**/*.js"
@@ -18,7 +22,7 @@
     },
     "homepage": "https://github.com/Radek44/mischievous-monkeys#readme",
     "dependencies": {
-        "express": "^4.13.4",
-        "request": "^2.70.0"
+        "express": "^4.21.2",
+        "helmet": "^8.0.0"
     }
 }
